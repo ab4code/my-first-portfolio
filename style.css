@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* header style */
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    letter-spacing: .5px;
+    position: relative;
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .4s;
+}
+
+ a:hover:after{
+    width: 100%;
+}
+
+.logo h1 a{
+    font-family: 'Bonheur Royale';
+    font-size: 55px;
+    color: red;
+}
+
+.logo a{
+    text-decoration: none;
+}
+  
+.logo a:visited{
+    color:white;
+}
+
+.container{
+    display: flex;
+}
+
+.ham, .menu{
+    display: none;
+}
+
+.menu{
+    font-size: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*  header style end here*/
+
+/* banner style */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url('./background/wp7453603.jpg');
+    overflow: hidden;
+    /* background: rgb(57, 57, 230); */
+    /* background: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* animation text */
+  
+  .banner-name {
+    font-weight: 200;
+    margin: 0.5em 0;
+    color: white;
+  }
+  .banner-name { 
+      font-size: 3em; 
+    }
+/* animation text */
+.banner-items{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-text{
+    max-width: 450px;
+    line-height: 30px;
+}
+
+.banner-intro{
+    font-size: 25px;
+    color: white;
+}
+
+.banner-description{
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.design{
+    color: white;
+    font-size: 20px;
+}
+
+p{
+    font-size: 19px;
+}
+
+h1{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.icon{
+    color: white;
+    font-size: 40px;
+}
+
+.icon:hover{
+    transition: .5s;
+    color:  #766dff;
+    font-size: 40px;
+}
+
+.download-button{
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    padding: 7px;
+    background-color: white;
+    margin: 10px 0;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.download-button:hover{
+    transition: .5s;
+    background-color:  #766dff;
+    color: white;
+}
+
+.banner-social{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* about style */
+.about{
+    width: 100%;
+    height: 100vh;  
+}
+
+.about-parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-character{
+    max-width: 350px;
+    line-height: 30px;
+}
+
+.image-container{
+    width:280px;
+    height: 390px;
+    border-radius: 5px;
+    background: red;
+    position: relative;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.title,
+.subtitle{
+    text-align: center;
+    /* font-family: 'Bonheur Royale'; */
+    padding: 1px;
+}
+
+.subtitle{
+    font-size: 17px;
+    padding-top: 20px;
+    color: #4070F4;
+}
+
+.title{
+    margin: 0;
+}
+
+.mine{
+    margin-top: 30px;
+}
+
+
+.text{
+    margin-top: 10px;
+}
+
+.quality{
+    margin: 15px 0;
+}
+
+.about-items-child2{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#icon{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.contact-info-child{
+    display: flex;
+    margin: 30px 0;
+}
+
+.child-text{
+    line-height: 30px;
+}
+
+.change{
+    color: #4070F4;
+}
+
+/* services */
+.services{
+    width: 100%;
+    height: 100vh;
+}
+
+.services-container{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-items{
+    width: 270px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 15px black;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.services-items::before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 80%;
+    left: 80%;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.card::before{
+    background-color: #4070F4;
+}
+.card:hover::before{
+    animation: slide .3s linear forwards;
+}
+
+.card:hover{
+    transition-property: all;
+    transition-delay: .1s;
+    color: white;
+}
+
+@keyframes slide{
+    100%{
+    height: 350px;
+    width: 270px;
+    bottom: 0;
+    left: 0; 
+    border-radius: 15px;
+    background-color: #4070F4;    
+    }
+}
+
+.render{
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+    background: #4070F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.job-done{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* work style here */
+.works{
+    width: 100%;
+    height: 100vh;
+}
+
+.work-image{
+    width: 320px;
+    z-index: -1;
+    position: relative;
+} 
+
+.work-example{
+    height: 42vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work-item{
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+ .image__img{
+    display: block;
+    width: 100%;
+}
+
+.image__overlay{
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition:  transform 0.25s;
+} 
+
+.image__overlay > * {
+    transform: translateY(0);
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+.image__title{
+    font-size: 30px;
+}
+
+ .image__button{
+    width: 200px;
+    padding: 9px;
+    border: none;
+    color: white;
+    background: #766dff;
+    cursor: pointer;
+} 
+
+/* contact */
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+
+/* form style */
+.boku{
+    background: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+}
+
+:root{
+    --red: red;
+}
+
+form{
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    width: 39%;
+    margin: 0 16px;
+    display: block;
+}
+
+form h2{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form .form-inline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+form .form{
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+form .form input,
+form .form textarea{
+    padding: 8px;
+    width: 100%;
+    border-radius: 3px;
+    border: 2px solid #bbb;
+    outline: none;
+    transition: .3s ease;
+}
+
+form .form label{
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    color: #555;
+    transform: translateY(-50%);
+    padding: 0 2px;
+    transition: .3s ease;
+}
+
+form .form textarea ~ label{
+    top: 8px;
+    transform: unset;
+}
+
+form .form textarea{
+    resize: vertical;
+}
+
+form .form input.invalid ~ label,
+form .form textarea.invalid ~ label,
+form .form input.valid ~ label,
+form .form textarea.valid ~ label ,
+form .form input:focus ~ label,
+form .form textarea:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+    font-weight: 500;
+    background: #fff;
+    transform: unset;
+}
+
+form .form input.valid ~ label,
+form .form textarea.valid ~ label{
+    color: var(--blue);
+}
+
+form .form input.valid,
+form .form textarea.valid{
+    border-color: var(--blue);
+}
+
+
+form .form input.invalid ~ label,
+form .form textarea.invalid ~ label{
+    color: var(--red);
+}
+
+form .form input.invalid,
+form .form textarea.invalid{
+    border-color: var(--red);
+}
+
+
+form button{
+    padding: 10px 40px;
+    background: #4070F4;
+    color: white;
+    border: 2px solid var(--blue);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease;
+    font-weight: 600;
+}
+
+form button:hover{
+    background: var(--blue);
+    color: black;
+}
+
+.map-banner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map-item{
+    width: 85%;
+    height: 170px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.map-icon{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.map-item:hover .map-icon:hover{
+    transition: all .3s linear;
+    color: #4070F4;
+}
+
+.map-title{
+    font-size: 18px;
+}
+.map-item>a{
+    text-decoration: none;
+    color: black;
+}
+
+/* footer section */
+.footer{
+    width: 100%;
+    height: 48vh;
+    background: #4070F4;
+    position: relative;
+}
+
+.footer-icon{
+    color: white;
+    font-size: 40px;
+}
+
+.footer-icon:hover{
+    color: rgb(0, 21, 80);
+    transition: .3s ease;
+}
+
+.footer-title{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.footer-subtitle{
+    text-align: center;
+    color: white;
+}
+
+.footer-banner{
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-item  a{
+    padding: 20px;
+}
+
+.footer-description{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.google-map{
+    width: 580px;
+    height: 330px;
+}
+
+.back-top{
+    position: fixed;
+    top: 70%;
+    right: 6%;
+    border-radius: 10px;
+    width: 50px;
+    height: 45px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.arrow{
+    margin-top: 12px;
+    color: #4070F4;
+}

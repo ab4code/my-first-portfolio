@@ -1,0 +1,293 @@
+/* HOME MEDIA */
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    position: relative;
+  }
+
+  .banner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ham,
+  .menu {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .logo h1 {
+    position: absolute;
+    top: -19px;
+    left: 15px;
+    color: #4070f4;
+  }
+
+  .menubar {
+    width: 300px;
+    /* height: 380px; */
+    height: 100vh;
+    background-color: rgba(64, 112, 244, 0.966);
+    /* margin-top: 300px; */
+    margin-top: 600px;
+    padding: 15px;
+    transform: translateX(-160%);
+    transition: 0.5s;
+    z-index: 2;
+    position: relative;
+  }
+
+  .check {
+    transition: 0.5s;
+    transform: translateX(-35%);
+    /* transform: translateX(50%); */
+  }
+
+  .clean{
+    position: relative;
+    transform: translateX(0%);
+  }
+
+  nav ul li {
+    display: block;
+    padding: 15px;
+    /* padding: 20px 10px; */
+  }
+
+  nav a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .4s;
+}
+
+ a:hover:after{
+    width: 100%;
+}
+
+  .banner-items {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .banner-social {
+    width: 50%;
+    height: 10vh;
+    flex-direction: row;
+  }
+
+  .download-button {
+    width: 180px;
+  }
+
+  .banner-text {
+    max-width: 80%;
+    height: 55vh;
+  }
+
+  .banner-intro,
+  .banner-desciption {
+    font-size: 19px;
+  }
+
+  .banner-name {
+    font-size: 2em;
+  }
+}
+
+/* about media */
+@media (max-width: 500px) {
+  .about {
+    width: 100%;
+    height: 144vh;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .about-parent {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-character {
+    font-size: 17px;
+    max-width: 360px;
+  }
+
+  .image-container {
+    width: 200px;
+    height: 280px;
+  }
+
+  .mine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quality {
+    font-size: 22px;
+  }
+
+  #icon {
+    font-size: 18px;
+  }
+
+  .contact-info {
+    font-size: 18px;
+  }
+
+  .child-text {
+    font-size: 18px;
+  }
+}
+
+/* services section */
+@media (max-width: 500px) {
+  .services {
+    width: 100%;
+    height: 210vh;
+  }
+
+  .services-container {
+    height: 200vh;
+    flex-direction: column;
+  }
+}
+
+/* portfolio section */
+@media (max-width: 500px) {
+  .works {
+    width: 100%;
+    height: 290vh;
+  }
+
+  .work-example {
+    height: 140vh;
+    flex-direction: column;
+  }
+}
+
+/* contact section */
+@media screen and (max-width: 480px) {
+  form .form-inline {
+    grid-gap: unset;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    width: 100%;
+    height: 160vh;
+  }
+
+  .boku {
+    height: 140vh;
+    flex-direction: column;
+  }
+
+  form h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: -70px 0 15px 0;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+    background: transparent;
+  }
+
+  .form textarea {
+    height: 100px;
+  }
+
+  form button {
+    background-color: #4070f4;
+  }
+}
+
+/* footer sectiion */
+@media (max-width: 500px) {
+  .footer {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .footer-banner {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .title,
+  .subtitle {
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+ @media (max-width: 470px) {
+    .menubar {
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(64, 112, 244, 0.966);
+        margin-top: 660px;
+        padding: 15px;
+        transform: translateX(-160%);
+        transition: 0.5s;
+        z-index: 2;
+        position: relative;
+      }
+    
+      .check {
+        transition: 0.5s;
+        transform: translateX(-29%);
+      }
+} 
+
+ @media (max-width: 420px) {
+    .menubar {
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(64, 112, 244, 0.966);
+        margin-top: 660px;
+        padding: 15px;
+        transform: translateX(-160%);
+        transition: 0.5s;
+        z-index: 2;
+        position: relative;
+      }
+    
+      .check {
+        transition: 0.5s;
+        transform: translateX(-20%);
+      }
+} 
